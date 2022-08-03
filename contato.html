@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+</head>
+<body>
+    <form action="">
+        <h1>Para melhorar nosso atendimento faça um cadastro em nosso sistema, e agende um horário!</h1>
+
+        <nav>
+            <a href="/barbearia/barbearia.html">Página inicial</a>
+            <a href="barbeariaProd.html">Produtos</a>
+        </nav>
+        <fieldset>
+            <legend>
+                Cadastro do Cliente
+            </legend>
+            <div>
+                <label for="nome">Nome: </label>
+                <input type="text">
+            </div>
+
+            <div>
+                <label for="sexo">Sexo: </label>
+                <input type="radio" name="tipo" value="Masculino"> Masculino
+                <input type="radio" name="tipo" value="Feminino"> Feminino 
+            </div>
+
+            <div>
+                <label for="idade">Idade:</label>
+                <input type="number">
+            </div>
+
+            <div>
+                <label for="Endereço"> Endereço: </label>
+                <input type="text" name="" id="Endereço" placeholder="Digite o Endereço">
+            </div>
+            
+            <div>
+                <label for="Cidade">Cidade: </label>
+                <input type="text" id="Cidade" placeholder="Digite o Cidade">
+            </div>
+
+            <div>
+                <label for="estado">Estado:</label>
+                <select name="UF" id="">
+                <option value="1">UF</option>
+                <option value="PA">PA</option>
+                <option value="RJ">RJ</option>
+                <option value="RO">RO</option>
+                <option value="BH">BH</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="CEP">CEP:</label>
+                <input type="text" placeholder="XXXXX-XXX">
+            </div>
+
+            <div>
+                <label for="Res">Tel/Res</label>
+                <input type="text" placeholder="(99)99999-9999">
+            </div>
+            
+            <div>
+                <label for="Res">Tel/Cel</label>
+                <input type="text" placeholder="(99)99999-9999">
+            </div>
+        
+            <div>
+                <label for="Email">Email: </label>
+                <input type="text" id="Email" placeholder="Digite o endereço de Email">
+            </div>
+
+            <div>
+                <label for="Reserva">Reserva:</label>
+                <input type="date">
+                <input type="time" id="Reserva">
+            </div>
+        </fieldset>
+
+        <button>Incluir</button>
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <td>Dia</td>
+                <td>Horário</td>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Segunda</td>
+                <td>8h ~ 20hr</td>
+            </tr>
+            <tr>
+                <td>Quarta</td>
+                <td>8h ~ 20hr</td>
+            </tr>
+            <tr>
+                <td>Sexta</td>
+                <td>8h ~ 20hr</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <style>
+        td, th{
+            padding: 5px;
+            border: solid 1px black ;
+        }
+
+        thead{
+            background-color: grey;
+            color: white;
+        }
+
+        table{
+            text-align: center;
+        }
+
+        label{
+            width: 70px;
+            display: inline-block;
+            padding: 10px;
+        }
+
+        button {
+            width: 80px;
+
+        }
+    </style>
+</body>
+</html>
