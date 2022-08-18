@@ -1,94 +1,117 @@
 <html>
 <head>
-	<title>Exerc�cio Restaurante / Pizzaria</title>
+	<title>Exercicio e-commerce</title>
 </head>
+<meta http-equiv=”Content-Type” content=”text/html; charset=utf-8″>
 <body>
 
-	<style>
-		.topnav{
-			background-color: #212121;
-			font-size: 20px;
-			padding: 15px;
+<style>
 
-		}
+	body{
+		background-color: #dcdcdc;
+	}	
 
-		.topnav a{
-			text-align: left;
-			text-decoration: none;
-			color: white;
-			padding: 15px;
-		}
 
-		.titulo-principal{
-			font-size: 100px;
-			
-			font-family: Arial, Helvetica, sans-serif;
-			padding: 100px;
-			color: white;
-			position: absolute;
-			margin-top: -27%;
-			margin-left: 8%;
-			text-align: center;
-		}
+	.header{
+		text-align: center;
+		border: solid 30px white;
+		background-color: white;
+	}
 
-		.footer{
-			padding: 50px;
-			text-align: center;
-			background-color: #808080;
-			color: black;
-		}
+	.topnav{
+		background-color: black;
+		padding: 14 16;
+	}
 
-		.preco{
-			float: right;
-			background-color: #212121;
-			padding: 5px;
-			color: white;
-			font-family: Arial, Helvetica, sans-serif;
+	.topnav a{
+		text-align: center;
+		color: #f2f2f2;
+		text-decoration: none;
+		padding: 10px;
+	}
 
-		}
+	.topnav a:hover{
+		background-color: #dcdcdc;
+		color: black;
+		padding: 17 18;
+	}
 
-		li {
-			list-style: none;
-			font-family: Arial, Helvetica, sans-serif;
-			font-size: 20px;
-		}
+	.sellcard{
+		float: left;
+		width: 23.40%;
+		margin: 10px;
+	}
 
-		img{
-			height: 550px;
-			margin-left: 10%;
-			
-		}
-	</style>
+	.sellcard img {
+		width: 80%;
+		margin: auto;
+	}
+
+	.descricao{
+		text-align: center;
+		font-size: 15px;
+		font-family: helvetica;
+		font-variant: normal;
+		font-weight: 400;
+	}
+
+	.valor{
+		text-align: center;
+		font-size: 0.8rem;
+		font-weight: bold;
+	}
+
+	.compra{
+		text-align: center;
+	}
+	
+</style>
+
+<div class="header">
+  <h1>Loja de Roupas e Acessórios</h1>
+</div>
 
 <div class="topnav">
-  <a href="#">Inicio</a>
-  <a href="#cardapio">Cardápio</a>
-  <a href="#">Contato</a>
+  <a href="#">Home</a>
+  <a href="#">Roupas</a>
+  <a href="#">Acessórios</a>
+  <a href="#" style="float:right"><span>Carrinho de compras</span>
+	<img src="imagens/compra.png" 
+	height="22px"
+	style="vertical-align:middle;">
+	</a>
+
 </div>
 
-<img src="imagens/pizza.jpg"  width="80%"alt="">
 
-<div class="titulo-principal">PIZZARIA</div>
-<div class="header">
-</div>
 
-<div class="row" id="cardapio">
-	<div class="card">
-		<h1>Pizzas</h1>
-		<ul class="listas">
-			<li> <p>Portuguesa - Mussarela, presunto, ovo de codorna, azeitona preta, cebola e pimentão verde.<span class="preco">R$ 29,90</span></p> </li>
-			<li> <p>4 Queijos - Mussarela, requeijão, gorgonzola e parmesão ralado.<span class="preco">R$ 29,90</span></p> </li>
-			<li> <p>Bauru - Mussarela, presunto, requeijão e tomate.<span class="preco">R$ 29,90</span></p> </li>
-			<li> <p>Frango Grelhado - Mussarela, frango, requeijão, tomate, azeitona preta e manjericão.<span class="preco">R$ 29,90</span></p> </li>
-		</ul>
-	</div>
-</div>
-
-<div class="footer">
-  <h2>Aberto</h2>
-  <p>
-	Seg - Sex das 17 ás 23 horas.
-  </p>
+<div class="row">
+	<div>
+		<div class="sellcard">
+			<img src="imagens/jaqueta.jpg">
+			<p class="descricao">Jaqueta de couro - Roupa</p>
+			<p class="valor">R$ 279,00</p>
+			<p class="compra">COMPRAR</p>
+		</div>
+		<div class="sellcard">
+			<img src="imagens/bone.jpg">
+			<p class="descricao">Boné- Acessório</p>
+			<p class="valor">R$ 79,00</p>
+			<p class="compra">COMPRAR</p>
+		</div>
+		<div class="sellcard">
+			<img src="imagens/jaqueta.jpg">
+			<p class="descricao">Jaqueta de couro - Roupa</p>
+			<p class="valor">R$ 279,00</p>
+			<p class="compra">COMPRAR</p>
+		</div>
+		<div class="sellcard">
+			<img src="imagens/bone.jpg">
+			<p class="descricao">Boné - Acessório</p>
+			<p class="valor">R$ 79,00</p>
+			<p class="compra">COMPRAR</p>
+		</div>
+	</div>  
 </div>
 
 </body>
