@@ -7,6 +7,7 @@
 
 <style>
 
+
 	body{
 		background-color: #dcdcdc;
 	}	
@@ -63,6 +64,42 @@
 
 	.compra{
 		text-align: center;
+	}
+
+	@media (max-width: 700px){
+		.topnav{
+		display: flex;
+		flex-direction: column;
+		margin: 0px;
+		}
+
+		.header{
+			padding: 50px;
+			margin: 0px;
+		}
+
+		.sellcard {
+			width: 50%;
+			display: inline-block;
+			flex-direction: column;
+			align-items: center;
+			margin-left: 25%;
+			
+		}
+
+		.sellcard img {
+			width: 130%;
+		}
+		
+		.compra{
+			padding: 10px;
+			border: 2px solid black;
+		}
+
+		.compra:hover{
+			background-color: #444;
+			columns: white;
+		}
 	}
 	
 </style>
