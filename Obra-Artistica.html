@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/obra-artistica.css" />
+
+    <style>
+
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .card-container{
+        display: flex;
+      }
+      
+      .cards {
+        display: flex;
+        flex-direction: row;
+        margin: 10px;
+      }
+
+      @media (max-width:420px){
+        img{
+          height: 150px;  
+          padding: 5px;
+          
+        }
+        .cards{
+          display: flex;
+          flex-direction: column;
+        }
+      }
+      
+      @media (max-width:419px){
+        img{
+          height: 250px;  
+          padding: 5px;
+          
+        }
+        
+        .card-container{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .card{
+          align-content: center;
+        }
+
+      }
+    </style>
+    
+
+    <title>Obra Artisitica</title>
+  </head>
+  <body>
+    <main class="cards">
+      <div class="card-container">
+        <article class="card">
+          <div class="card-img">
+            <img src="./ron-mueck-1.JPG" alt="Imagem 01" />
+          </div>
+          <div>
+            <h3>Lorem ipsum dolor sit amet</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit
+              beatae amet porro id alias, doloremque hic. Ratione, iure esse
+              repudiandae dolores totam libero saepe deserunt eaque. Mollitia
+              magni optio ratione
+            </p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-img">
+            <img src="./ron-mueck-2.JPG" alt="Imagem 02" />
+          </div>
+
+          <div>
+            <h3>Libero iure reiciendis</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim
+              mollitia iure hic ipsam minima non soluta quisquam, repellat
+              nostrum similique, aspernatur veritatis vel ipsum eum cupiditate
+              qui ipsa. Qui, inventore.
+            </p>
+          </div>
+        </article>
+      </div>
+      <article class="card">
+        <div class="card-img">
+          <img src="./ron-mueck-3.JPG" alt="Imagem 03" />
+        </div>
+        <div>
+          <h3>Quidem quas reiciendis</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi
+            adipisci, eius suscipit iusto reiciendis dolore fugit eveniet vel
+            ipsa modi voluptatum consequuntur? Quis ullam provident quod quasi
+            porro! Officia, cum.
+          </p>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>
