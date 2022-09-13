@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSSGRID</title>
+</head>
+<style>
+    body{
+        background-color: aliceblue;
+    }
+    
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(4, 150px);
+        gap: 20px 20px;
+        border-radius: 30%;
+    }
+
+    .item{
+        background-color: black;
+        border-radius: 10%;
+        color: aliceblue;
+        font-size: 50px;
+    }
+
+    .item.enter{
+        grid-row-start: 4;
+        grid-row-end: span 2;
+        grid-column-start: 4;
+        
+    }
+
+    .item.zero{
+        grid-column-start: 2;
+        grid-column-end: span 2;
+    }
+
+   
+
+
+</style>
+<body>
+    <div class="grid">
+        <div class="item">Num Lock</div>
+        <div class="item sinais">*</div>
+        <div class="item sinais">/</div>
+        <div class="item sinais">-</div>
+        <div class="item">9</div>
+        <div class="item">8</div>
+        <div class="item">7</div>
+        <div class="item sinais">+</div>
+        <div class="item">6</div>
+        <div class="item">5</div>
+        <div class="item">4</div>
+        <div class="item sinais">.</div>
+        <div class="item">2</div>
+        <div class="item">1</div>
+        <div class="item">3</div>
+        <div class="item enter">Enter</div>
+        <div class="item">Del</div>
+        <div class="item zero">0</div>
+
+
+    </div>
+</body>
+</html>
